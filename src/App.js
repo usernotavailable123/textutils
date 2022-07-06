@@ -7,8 +7,7 @@ import TextForm from './components/TextForm';
 import {
   BrowserRouter as Router,
   Routes ,
-  Route,
-  Link
+  Route
 } from 'react-router-dom';
 function App() {
   const [mode,setMode] = useState('light');//states whether dark mode is enabled or not
@@ -51,7 +50,7 @@ function App() {
   return (
    <>   
     <Router>
-      <Navbar title="TextUtils" aboutText="About Text" mode={mode} toggleMode = {toggleMode} setGreenMode = {setGreenMode}/>
+      <Navbar title="TextUtils" aboutText="About" mode={mode} toggleMode = {toggleMode} setGreenMode = {setGreenMode}/>
       <Alert alert = {alert}/>
       <div className='container'>
         <Routes>
