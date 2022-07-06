@@ -64,7 +64,7 @@ function App() {
     </Router> */}
     <Navbar title="TextUtils" aboutText="About" mode={mode} toggleMode = {toggleMode} setGreenMode = {setGreenMode}/>
     <Alert alert = {alert}/>
-    <TextForm heading="Enter the text to analyze below" mode = {mode} showAlert = {showAlert}/>
+    <TextForm heading="Enter the text to analyze below" mode = {mode} showAlert = {showAlert}/> 
    </>
   );
 }
