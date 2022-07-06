@@ -48,8 +48,9 @@ function App() {
   }
   
   return (
-   <>   
-    <Router>
+   <>  
+   {/* because github deployment is not compatible with react router we are removing it.  */}
+    {/* <Router>
       <Navbar title="TextUtils" aboutText="About" mode={mode} toggleMode = {toggleMode} setGreenMode = {setGreenMode}/>
       <Alert alert = {alert}/>
       <div className='container'>
@@ -60,7 +61,10 @@ function App() {
           </Route>
         </Routes>
       </div>
-    </Router>
+    </Router> */}
+    <Navbar title="TextUtils" aboutText="About" mode={mode} toggleMode = {toggleMode} setGreenMode = {setGreenMode}/>
+    <Alert alert = {alert}/>
+    <TextForm heading="Enter the text to analyze below" mode = {mode} showAlert = {showAlert}/>
    </>
   );
 }
