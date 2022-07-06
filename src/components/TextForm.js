@@ -39,10 +39,10 @@ export default function TextForm(props) {
             <textarea className="form-control" value={text} onChange = {handleOnChange} rows="8" style = {{backgroundColor:props.mode==='dark'?'grey':'white',
             color: props.mode === 'dark'?'white':'black'}} id = 'myBox'></textarea>
             </div>
-            <button className="btn btn-primary mx-1" onClick={handleUpClick}> Convert to Uppercase</button>
-            <button className="btn btn-primary mx-1" onClick={handleLoClick}> Convert to LowerCase</button>
-            <button className="btn btn-primary mx-1" onClick={handleClearClick}> Clear Text</button>
-            <button className="btn btn-primary mx-1" onClick={handleCopy}> Copy Text</button>
+            <button className={`btn btn-${props.mode ==='green'?'success':'primary'} mx-1`} onClick={handleUpClick}> Convert to Uppercase</button>
+            <button className={`btn btn-${props.mode ==='green'?'success':'primary'} mx-1`} onClick={handleLoClick}> Convert to LowerCase</button>
+            <button className={`btn btn-${props.mode ==='green'?'success':'primary'} mx-1`} onClick={handleClearClick}> Clear Text</button>
+            <button className={`btn btn-${props.mode ==='green'?'success':'primary'} mx-1`} onClick={handleCopy}> Copy Text</button>
         </div>
         <div className='container my-2' style = {{color:props.mode==='dark'?'white':'black'}}>
             <h2>Your text summary</h2>
