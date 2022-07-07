@@ -31,9 +31,9 @@ function App() {
 
   }
   const toggleMode = (cls) =>{
-    removeBodyClasses();
-    console.log('cls:',cls);
-    document.body.classList.add('bg-'+cls);
+    // removeBodyClasses();
+    // console.log('cls:',cls);
+    // document.body.classList.add('bg-'+cls);
     if(mode === 'light'){
       setMode('dark');
       document.body.style.backgroundColor = '#161313';
